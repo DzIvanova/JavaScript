@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Min and Max</title>
+</head>
+<body>
+	<script>
+		function findMinAndMax(n) {
+			n.sort(function(a,b) {
+				return a > b;
+			});
+			console.log("Min -> " + n[0] + "\n" + "Max -> "  + n[n.length - 1]);
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Compare Chars</title>
+</head>
+<body>
+	<script>
+		function compareChars(arr1, arr2) {
+			for (var i = 0; i <= arr1.length - 1; i++) {
+				if(arr1[i] == arr2[i]) {
+					if(i == arr1.length - 1 && arr1.length == arr2.length) {
+						console.log("Equal");
+					}
+				}
+				else {
+					console.log("Not Equal");
+					break;
+				}
+			}
+		}
+	</script>
+</body>
+</html>

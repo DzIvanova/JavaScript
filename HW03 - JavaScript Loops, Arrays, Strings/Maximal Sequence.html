@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Maximal Sequence</title>
+</head>
+<body>
+	<script>
+		function findMaxSequence(arr) {
+			var tmp = arr[0];
+			var longestSequence = 0;
+			var currentSequence = 0;
+			var result = [];
+			for (var i = 0; i <= arr.length - 2; i++) {
+				if (arr[i] === arr[i + 1]) {
+					currentSequence++;
+					if (currentSequence >= longestSequence) {
+						longestSequence = currentSequence;
+						tmp = arr[i];
+					} 
+				} else{
+					currentSequence = 1;
+				}
+			}
+			for (i = 0; i <= longestSequence; i++) {
+				result[i] = tmp;
+			} 
+			console.log(result);
+		}
+	</script>
+</body>
+</html>
