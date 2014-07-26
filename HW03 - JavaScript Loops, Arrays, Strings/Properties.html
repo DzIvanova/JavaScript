@@ -3,19 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Properties</title>
+	<script src="docProperties.js"></script>
 </head>
 <body>
 	<script>
-		function displayProperties() {
-			var properties = [];
-			for (var prop in document) {
-				properties.push(prop);
-			}
-			properties.sort();
-			for (var i = 0; i < properties.length - 1; i++) {
-				console.log(properties[i]);
-			}
-		}
+		displayProperties(this);
 	</script>
 </body>
 </html>
