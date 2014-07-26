@@ -7,11 +7,19 @@
 <body>
 	<script>
 		function findMinAndMax(n) {
-			n.sort(function(a,b) {
-				return a > b;
-			});
-			console.log("Min -> " + n[0] + "\n" + "Max -> "  + n[n.length - 1]);
+			var min = n[0];
+			var max = n[0];
+			for (var i = 1; i < n.length; i++) {
+				if(n[i] < min) {
+					min = n[i];
+				}
+				if (n[i] > max) {
+					max = n[i];
+				}
+			}
+			console.log("Min -> " + min + "\n" + "Max -> "  + max);
 		}
 	</script>
+
 </body>
 </html>
